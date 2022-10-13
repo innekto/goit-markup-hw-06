@@ -504,7 +504,7 @@
         <form>
           <div class="modal-form">
             <label for="name">Ім'я</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" placeholder=" " />
             <svg width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-name"></use>
             </svg>
@@ -534,14 +534,25 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <input
-            type="checkbox"
-            name="checkbox"
-            id="checkbox"
-            placeholder=" "
-          />
-          <label class="check" for="checkbox"
-            >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+
+          <label class="check">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              placeholder=" "
+            />
+
+            <span class="iconic">
+              <svg width="16" height="15">
+                <use href="./images/symbol-defs.svg#icon-checked"></use>
+              </svg>
+            </span>
+            <span
+              >Погоджуюся з розсилкою та приймаю
+              <a href="">Умови договору</a></span
+            >
           </label>
           <button class="send-btn" type="submit">Відправити</button>
         </form>

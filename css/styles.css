@@ -385,16 +385,52 @@ ul {
 }
 
 .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
+.checkbox {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+}
+
+.iconic {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+}
+.iconic svg {
+  opacity: 0;
+  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
 .check a {
   color: var(--active-text-color);
 }
 
+.check input:checked + .iconic {
+  /* background-color: var(--active-text-color); */
+  border: none;
+}
+
+.check input:checked + .iconic svg {
+  opacity: 1;
+}
 .send-btn {
   display: block;
   margin-top: 30px;
@@ -773,6 +809,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  
 }
 
 .form-field input[type="email"] {
@@ -787,6 +824,7 @@ ul {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  outline:none;
 }
 
 .submit-btn {
