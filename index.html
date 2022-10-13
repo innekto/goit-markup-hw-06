@@ -505,16 +505,25 @@
           <div class="modal-form">
             <label for="name">Ім'я</label>
             <input type="text" name="name" id="name" />
+            <svg width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-name"></use>
+            </svg>
           </div>
 
           <div class="modal-form">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <input type="tel" name="tel" id="tel" placeholder=" " />
+            <svg width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
           </div>
 
           <div class="modal-form">
             <label for="mmail">Пошта</label>
-            <input type="email" name="mmail" id="mmail" />
+            <input type="email" name="mmail" id="mmail" placeholder=" " />
+            <svg width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
           </div>
           <div class="modal-form">
             <label for="comment">Коментар</label>
@@ -525,7 +534,12 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <input type="checkbox" name="checkbox" id="checkbox" />
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            placeholder=" "
+          />
           <label class="check" for="checkbox"
             >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
           </label>
